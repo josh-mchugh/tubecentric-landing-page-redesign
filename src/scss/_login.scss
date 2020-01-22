@@ -1,0 +1,147 @@
+@import "_colors";
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0;
+    background-color: $gray-900;
+
+    .logo {
+        padding: 0.5rem 0;
+    }
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem;
+    text-align: center;
+    height: 500px;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),url("../assets/filmmaker-2838932_960_720.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .header{
+        display: flex;
+        margin: auto 0;
+        padding: 2rem 2rem;
+        flex-direction: column;
+
+        h1 {
+            margin-bottom: 0.3rem;
+            padding: 2rem 0.5rem;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+            color: $white;
+        }
+
+        .subheader {
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 0.2rem;
+            font-size: 1.0rem;
+            font-weight: 600;
+            font-style: normal;
+            color: $white;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        max-width: 250px;
+        margin: auto;
+        &.download{
+            padding: 1rem;
+            font-size: 1.2rem;        
+        }
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 350px;
+    padding: 1rem;
+
+    &:nth-child(even) {
+        background-color: $gray-100;
+    }
+
+    .content {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    
+        .header {
+            text-align: center;
+            padding: 1rem;
+        
+            .subheader {
+
+            }
+        }
+
+        .description {
+        }
+
+        &.subscribe {
+            margin: 2rem;
+            padding: 2rem;
+
+            form {
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+
+    .image {
+        width: 50%;
+        padding: 1rem;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+ 
+.footer {
+    display: flex;
+
+    .content {
+        margin: auto;
+        text-align: center;
+        margin: 25px auto;
+
+        svg {
+            margin: auto;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) { 
+    
+}
+
+@media only screen and (max-width: 768px) { 
+    .section {
+        flex-direction: column;
+    
+        .image {
+            order: 2;
+            width: 100%;
+        }
+    }    
+    
+}
+
+@media only screen and (min-width: 992px) { 
+
+}
+
+@media only screen and (min-width: 1200px) { 
+
+}

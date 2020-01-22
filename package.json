@@ -1,0 +1,21 @@
+{
+  "name": "tubecentric-extension-landing",
+  "version": "1.0.0",
+  "description": "Landing page for tube centrics browser extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssbeautify": "^2.0.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
