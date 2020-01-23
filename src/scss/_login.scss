@@ -30,15 +30,15 @@
         h1 {
             margin-bottom: 0.3rem;
             padding: 2rem 0.5rem;
-            font-size: 2rem;
+            font-size: 4rem;
             font-weight: 700;
-            line-height: 1.5rem;
             color: $white;
+            letter-spacing: 1px;
         }
 
         .subheader {
             margin-bottom: 1.5rem;
-            padding: 0.5rem 0.2rem;
+            padding: 0rem 0.2rem 1rem 0;
             font-size: 1.0rem;
             font-weight: 600;
             font-style: normal;
@@ -48,11 +48,12 @@
 
     .btn {
         display: inline-block;
-        max-width: 250px;
+        max-width: 400px;
         margin: auto;
         &.download{
             padding: 1rem;
-            font-size: 1.2rem;        
+            font-size: 1.2rem; 
+            letter-spacing: 1px;       
         }
     }
 }
@@ -72,7 +73,9 @@
     .content {
         display: flex;
         margin: auto;
+        width: 50%;
         flex-direction: column;
+        border: 1px solid red;
     
         .header {
             text-align: center;
@@ -84,6 +87,9 @@
         }
 
         .description {
+            text-align: center;
+            margin: 0 3rem;
+            border: 1px solid red;
         }
 
         &.subscribe {
@@ -129,7 +135,11 @@
 @media only screen and (max-width: 768px) { 
     .section {
         flex-direction: column;
-    
+
+        .content {
+            width: 100%
+        }
+
         .image {
             order: 2;
             width: 100%;
